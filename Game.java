@@ -105,7 +105,7 @@ public class Game
        kitchen.setExit("north", supplyCloset);
        
        supplyCloset.setExit("south", kitchen);
-       supplyCloset.setExit("West", hallCloset);
+       supplyCloset.setExit("west", hallCloset);
        
        hallCloset.setExit("east", supplyCloset);
        hallCloset.setExit("west", mainHall4);
@@ -238,7 +238,8 @@ public class Game
         if(currentRoom.getLootFound() == true )
         {
             for(int i = 0; i < loot.size(); i++)
-            if(loot.get(i).getItemName().equals("key"))
+            if(loot.get(i).getItemName().equals("key") && (currentRoom.getShortDescription().equals("in a secret room with a chest"
+            ) || currentRoom.getShortDescription().equals("in the main study with a trunk behind the desk")))
             {
                 System.out.println("You found a Key for a locked door");
                 keyFound = true;
