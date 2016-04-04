@@ -2,10 +2,9 @@ import java.util.Random;
 import java.util.HashMap;
 import java.util.ArrayList;
 /**
- *  This class is the main class of the "World of Zuul" application. 
- *  "World of Zuul" is a very simple, text based adventure game.  Users 
- *  can walk around some scenery. That's all. It should really be extended 
- *  to make it more interesting!
+ *  The class creates a haunted Mansion the player is put in. To escape the player must find a key
+ *  that is hidden in one of two places. The game passivly tracks the player's movements by counting
+ *  how many steps he/she takes. You must find the way to the balcony in order to escape with the key and your life.
  * 
  *  To play this game, create an instance of this class and call the "play"
  *  method.
